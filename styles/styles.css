@@ -6,10 +6,35 @@ aside img{
     height: auto;
 
 }
+
+nav{
+    background-color: blue;
+    padding: 10px;
+} 
+nav a{
+    color: white;
+    display: block;
+    padding: 20px;
+}
+aside h2 {
+    postion: absolute;
+    top:47px;
+    left: 150 px;
+}
+
+
 p{
     padding: 0;
 }
+
+(wildcard){
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+
+}
 main img {
+    float: right;
     width: 150;
     height: auto;
     position: center;
@@ -26,5 +51,17 @@ aside{
 footer{
     margin-top: 15;
     border-top: 1px solid #000;
+    text-align: center;
+}
+/* Class Selector */
+.box{
+    margin: 1rem;
+    border: 1px solid rgba(0,0,0,1);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
+}
+aside{
+    width: 20em;
     text-align: center;
 }
