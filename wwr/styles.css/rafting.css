@@ -1,14 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
 :root {
-   heading: block-inline; 
+  heading: block-inline; 
 }
+
 
 .hero img {
   display:block-inline ;
   width: 100%;
   height: auto;
 }
+header {
+	margin: 1rem auto;
+	display: grid;
+	grid-template-columns: 120px 1fr 2fr;
+	align-items: center;
+	border-bottom: 1px solid #ccc;
+	max-width: 1000px;
+}
+
+.logo img {
+	margin: 0 0.25rem 0 1rem;
+	width: 64px;
+	height: auto;
+}
+
+h1 {
+	font-size: 2rem;
+	font-family: Acme, Arial, sans-serif;
+}
+
+nav {
+	text-align: right;
+}
+
+.navigation {
+	display: flex;
+	list-style: none;
+}
+
+.navigation li {
+	flex: 1 1 100%;
+}
+
+.navigation a {
+	display: block;
+	color: navy;
+	padding: 20px;
+	text-decoration: none;
+}
+
+.navigation a:hover {
+	color: tomato;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
 /* if you are using any Google fonts change the font names below to your fonts. 
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a | */
@@ -160,14 +206,4 @@ nav a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
 }
-.sitemap {
-  display: grid;
-  justify-content: center;
 
-  grid-template-columns: repeat(8, 12%);
-  grid-template-rows: 3em 1.5em 1.5em 3em;
-  grid-template-areas: ". . . home home . . ."
-    ". . . . top . . ."
-    ". left left center1 center2 right right ."
-    "page2 page2 . page4 page4 . page3 page3";
-}
