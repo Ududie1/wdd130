@@ -4,6 +4,27 @@ aside img{
     height: auto;
 
 }
+.flexbox-container {
+    display: flex;
+}
+
+.flexbox-item {
+    width: 200;
+    margin: 30;
+    border: 3px solid #333;
+    background-color: #1ff34d;
+
+}
+.flexbox-item-1 {
+    min-height: 100;
+}
+.flexbox-item-2 {
+    min-height: 100;
+}
+.flexbox-item-3 {
+    min-height: 100;
+}
+
 
 nav{
     background-color: steelblue;
@@ -15,15 +36,21 @@ nav{
 } 
 nav a{
     color: white;
-    display: block;
+    display: flex;
     padding: 20px;
 }
 aside h2 {
-    postion: absolute;
+    postion: relative;
     top:47px;
     left: 150 px;
 }
-
+main{
+    display: flex;
+    columns: 1;
+    width: 600px;
+    justify-content: space-between;
+    height: fit-content;
+}
 
 p{
     padding: 0;
@@ -34,28 +61,32 @@ header, footer {
 
 }
 .grid{
-    display: grid;
+    display: flex;
     align-items: center;
+
 }
 
 main img {
     float: right;
     width: 150;
     height: auto;
-    position: center;
+    position: relative;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+    
 }
 aside{
     width: 20rem;
-    position: relative;
-    grid-column: 1/2;
-    grid-row: 1/2;
     margin: 1rem;
     border: 1PX solid rgba(0,0,0,2); /* 1 */
     padding: 1rem;
     background-color: #eee;
     color: #333;
     text-align: center;
+    
 }
+
 footer{
     margin-top: 15;
     border-top: 1px solid #000;
@@ -69,11 +100,10 @@ footer{
     background-color: #ddd;
     color: #000;
 }
+
+
 main  {
-    grid-column: 2/3;
+    width:200px;
+    align-content: space-evenly;
     margin: 1rem;
-}
-aside{
-    width: 20em;
-    text-align: center;
 }
